@@ -1,42 +1,51 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.password_gen_wrap{
+  border: 2px solid black;
+  width:700px ;
+  position: absolute;
+  top: 30%;
+  transform: translate(-50%,50%);
+  background: radial-gradient(circle, rgba(76,76,79,1) 0%, rgba(0,0,0,0.9136029411764706) 35%);
+}
+.password_gen_wrap h1{
+  background: radial-gradient(circle, rgba(76,76,79,1) 0%, rgba(0,0,0,0.9136029411764706) 35%);
+  padding: 20px;
   text-align: center;
+  font-weight: 600;
+  color: white;
 }
+.password_input_wrap{
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+ display: flex;
+ justify-content: space-evenly;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.password_input_wrap input{
+  padding: 20px;
+  font-size: 22px;
+  font-weight: 500;
+  width: 70%;
+  background: gray;
+  color: white;
+  border: none;
+  outline: none;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.password_input_wrap button{
+  padding: 20px;
+  font-size: 22px;
+  font-weight: 500;
+  background-color: orangered;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.password_btns{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px 10px;
+  color: orangered;
+  font-size: 22px;
+  font-weight: 400;
+  background-color: black;
 }

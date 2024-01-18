@@ -50,6 +50,7 @@ const copyPasswordToClipboard=useCallback(()=>{
       
     <div className='password_gen_wrap'>
     <h1>Password Genrator</h1>
+    <div className='password_input_wrap'>
      <input
       type='text'
       value={password}
@@ -59,6 +60,7 @@ const copyPasswordToClipboard=useCallback(()=>{
       ref={passwordRef}
      />  
      <button onClick={copyPasswordToClipboard}>Copy</button>
+     </div>
       <div className='password_btns'>
 
       <div className='lenght_wrap'>
